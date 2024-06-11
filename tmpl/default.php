@@ -19,5 +19,9 @@ $wam = Factory::getApplication()->getDocument()->getWebAssetManager();
 $scriptUrl  = 'https://static.zdassets.com/ekr/snippet.js';
 $licenseKey = $params->get('license_key', '');
 
-$wam->registerAndUseScript('ze-snippet', $scriptUrl, ['key' => $licenseKey], ['defer' => true]);
-?>
+if ($licenseKey) {
+    $scriptUrl .= '?key=' . $licenseKey;
+}
+
+$wam->registerAndUseScript('ze-snippet', $scriptUrl, [], ['defer' => false]);
+
