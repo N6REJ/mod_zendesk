@@ -8,8 +8,17 @@
  * @link       http://n6rej.github.io
  */
 
-// no direct access
 defined('_JEXEC') or die('Restricted access');
 
-require_once (JPATH_SITE.DS.'components'.DS.'com_content'.DS.'src'.DS.
-  'Service'.DS.'Router.php');
+// Include the syndicate functions only once
+if(!defined('DS')){
+define('DS',DIRECTORY_SEPARATOR);
+}
+
+require_once (dirname(__FILE__).DS.'helper.php');
+
+$baseurl 				= JURI::base();
+
+require JModuleHelper::getLayoutPath('mod_klas_zendesk', $params->get('layout', 'default'));
+
+?>
