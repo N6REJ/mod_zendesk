@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="4.0" client="site" method="upgrade">
-	<name>MOD_KLASZENDESK</name>
+	<name>MOD_ZENDESK</name>
 	<author>N6REJ</author>
 	<creationDate>2024.6.11</creationDate>
 	<copyright>Copyright (C)2024 N6REJ</copyright>
@@ -8,10 +8,10 @@
 	<authorEmail>programming@hallhome.us</authorEmail>
 	<authorUrl>http://n6rej.github.io</authorUrl>
 	<version>2024.6.11</version>
-	<description>MOD_KLASZENDESK_DESC</description>
+	<description>MOD_ZENDESK_DESC</description>
 
 	<files>
-		<filename module="mod_klas_zendesk">mod_klas_zendesk.php</filename>
+		<filename module="mod_zendesk">mod_zendesk.php</filename>
 		<filename>LICENSE.txt</filename>
     <filename>index.html</filename>
     <filename>helper.php</filename>
@@ -24,9 +24,9 @@
 
 			<fieldset name="advanced">
 				<field name="license_key" type="text" default="" filter="string"
-					label="MOD_KLASZENDESK_FIELD_KEY_LABEL" 
-					description="MOD_KLASZENDESK_FIELD_KEY_DESC" />
-				
+					label="MOD_ZENDESK_FIELD_KEY_LABEL"
+					description="MOD_ZENDESK_FIELD_KEY_DESC" />
+
 				<field
 					name="layout"
 					type="modulelayout"

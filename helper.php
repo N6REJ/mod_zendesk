@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    MOD_Klas_zendesk
+ * @package    MOD_zendesk
  *
  * @author     N6REJ programming@hallhome.us
  * @copyright  Copyright (c) 2024 N6REJ all rights reserved

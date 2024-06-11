@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    MOD_Klas_zendesk
+ * @package    MOD_zendesk
  *
  * @author     N6REJ programming@hallhome.us
  * @copyright  Copyright (c) 2024 N6REJ all rights reserved
@@ -13,6 +13,6 @@ defined('_JEXEC') or die('Restricted access');
 use Joomla\CMS\HTML\HTMLHelper;
 
 $scriptUrl  = 'https://static.zdassets.com/ekr/snippet.js?key=';
-$licenseKey = $params->get('license_key', '');
+$scriptUrl .= $params->get('license_key', '');
 ?>
-<script id="ze-snippet" src="<?php echo $scriptUrl . $licenseKey; ?>"> </script>
+<script id="ze-snippet" src="<?php echo $scriptUrl; ?>"> </script>

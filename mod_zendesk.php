@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    MOD_Klas_zendesk
+ * @package    MOD_zendesk
  *
  * @author     N6REJ programming@hallhome.us
  * @copyright  Copyright (c) 2024 N6REJ all rights reserved
@@ -15,10 +15,10 @@ if(!defined('DS')){
 define('DS',DIRECTORY_SEPARATOR);
 }
 
-require_once (dirname(__FILE__).DS.'helper.php');
+require_once (dirname(_FILE_).DS.'helper.php');
 
 $baseurl 				= JURI::base();
 
-require JModuleHelper::getLayoutPath('mod_klas_zendesk', $params->get('layout', 'default'));
+require JModuleHelper::getLayoutPath('mod_zendesk', $params->get('layout', 'default'));
 
 ?>
