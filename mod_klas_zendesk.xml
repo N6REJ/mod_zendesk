@@ -23,6 +23,10 @@
 		<fields name="params">
 
 			<fieldset name="advanced">
+				<field name="license_key" type="text" default="" filter="string"
+					label="MOD_KLASZENDESK_FIELD_KEY_LABEL" 
+					description="MOD_KLASZENDESK_FIELD_KEY_DESC" />
+				
 				<field
 					name="layout"
 					type="modulelayout"
