@@ -15,7 +15,7 @@ if(!defined('DS')){
 define('DS',DIRECTORY_SEPARATOR);
 }
 
-require_once (dirname(_FILE_).DS.'helper.php');
+require_once (dirname(__FILE__).DS.'helper.php');
 
 $baseurl 				= JURI::base();
 
