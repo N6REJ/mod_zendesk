@@ -10,18 +10,9 @@
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
-
-use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
 
-$wam = Factory::getApplication()->getDocument()->getWebAssetManager();
-
-$scriptUrl  = 'https://static.zdassets.com/ekr/snippet.js';
+$scriptUrl  = 'https://static.zdassets.com/ekr/snippet.js?key=';
 $licenseKey = $params->get('license_key', '');
-
-if ($licenseKey) {
-    $scriptUrl .= '?key=' . $licenseKey;
-}
-
-$wam->registerAndUseScript('ze-snippet', $scriptUrl, [], ['defer' => false]);
-
+?>
+<script id="ze-snippet" src="<?php echo $scriptUrl . $licenseKey; ?>"> </script>
