@@ -23,5 +23,5 @@ if ($licenseKey) {
     $scriptUrl .= '?key=' . $licenseKey;
 }
 
-$wam->registerAndUseScript('ze-snippet', $scriptUrl, [], ['defer' => true]);
-?>
+$wam->registerAndUseScript('ze-snippet', $scriptUrl, [], ['defer' => false]);
+
