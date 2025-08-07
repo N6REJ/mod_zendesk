@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+  <update>
+    <name>mod_zendesk</name>
+    <description />
+    <element>mod_zendesk</element>
+    <type />
+    <version>2025.08.07.2</version>
+    <infourl />
+    <downloads>
+      <downloadurl type="full" format="zip">https://github.com/N6REJ/mod_zendesk/releases/download/2025.08.07.2/mod_zendesk_2025.08.07.2.zip</downloadurl>
+    </downloads>
+  </update>
+</updates>
